@@ -44,4 +44,4 @@ Each folder is categorized by topic or language, such as:
 You can either browse the code directly here or clone the repository:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/BhishamGahlaut805/C_CPP_DSA_Algorithms.git
