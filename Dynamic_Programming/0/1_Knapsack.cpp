@@ -164,3 +164,6 @@ int main(){
     cout<<"Max profit is : "<<Knapsack(cost,wt,maxWt);
 
 }
+//The time complexity of this approach is O(N*W) and the space complexity is O(N*W) for the DP array.
+//The Time Complexity of the Tabulation approach is O(N*W) and the space complexity is O(W) for the 1D array.
+
