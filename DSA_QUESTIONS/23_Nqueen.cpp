@@ -1,9 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Function to check if the current position is safe for placing a queen
+
 bool isSafe(int row, int col, vector<int> &solution)
 {
-    for (int i = 1; i < row; i++) // Fix index range
+    for (int i = 1; i < row; i++)
     {
         if (col == solution[i] || abs(row - i) == abs(col - solution[i]))
         {

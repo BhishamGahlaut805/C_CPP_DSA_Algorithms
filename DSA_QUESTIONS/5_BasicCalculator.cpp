@@ -18,8 +18,15 @@ int evaluateExpression(string s)
         if (isdigit(s[i]))
         {
             num = num * 10 + (s[i] - '0');  //For Handling MultiDigit Numbers
+            // it works like this:
+            // num = 0 * 10 + (s[i] - '0') = 0 + (s[i] - '0')
+            // num = 0 * 10 + (s[i] - '0') = 0 + (s[i] - '0')
+            //and we multiply by 10 to shift the previous digit to the left
+            // and add the new digit to the right.
         }
 
+        // If the current character is not a digit and not a space, or if it's the last character
+        // we need to process the previous number and operator
         if (!isdigit(s[i]) && s[i] != ' ' || i == s.size() - 1)
         {
             if (sign == '+')

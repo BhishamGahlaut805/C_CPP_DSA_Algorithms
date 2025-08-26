@@ -9,6 +9,21 @@ typedef struct ListNode
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 
 } ListNode;
+
+// Function to reorder the linked list
+// in the required order
+//The working logic of this code is as follows:
+// 1. Find the middle of the linked list using the slow and fast pointer technique.
+// 2. Reverse the second half of the linked list.
+// 3. Merge the first half and the reversed second half of the linked list.
+// 4. The final result is a reordered linked list where the nodes are arranged in the required order.
+// 5. The time complexity of this algorithm is O(n), where n is the number of nodes in the linked list.
+// 6. The space complexity is O(1) since we are not using any extra space for storing nodes.
+// 7. The algorithm modifies the original linked list in place, so no additional memory is used for creating new nodes.
+// 8. The algorithm is efficient and works well for large linked lists.
+// 9. The function takes a pointer to the head of the linked list as input and modifies the linked list in place.
+// 10. The function does not return anything, as it modifies the linked list directly.
+
 void reorderList(ListNode *head)
 {
     if (!head)
@@ -34,6 +49,7 @@ void reorderList(ListNode *head)
         node = second;
         second = temp;
     }
+    // Now, 'node' points to the head of the reversed second half of the linked list.
     // 3.Merge the two halves
     ListNode *first = head;
     second = node;

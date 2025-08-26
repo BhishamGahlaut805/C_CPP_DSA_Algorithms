@@ -15,6 +15,22 @@ typedef struct ListNode
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 } ListNode;
 
+class ListNode1{
+public:
+    int val;
+    ListNode1 *next;
+    ListNode1() : val(0), next(nullptr) {}
+    ListNode1(int x) : val(x), next(nullptr) {}
+    ListNode1(int x, ListNode1 *next) : val(x), next(next) {}
+};
+ListNode1*head_Testing=new ListNode1();
+ListNode1*tail_Testing=new ListNode1(100);
+ListNode1*temp_Testing12=new ListNode1(100,head_Testing);
+ListNode1*temp_Testing122=new ListNode1(100,tail_Testing);
+//ListNode:1->100
+
+ListNode*temp_Testing1=(ListNode*)malloc( sizeof(ListNode));
+
 ListNode *addTwoNumbers(ListNode *l1, ListNode *l2)
 {
     ListNode *temp = new ListNode(0);

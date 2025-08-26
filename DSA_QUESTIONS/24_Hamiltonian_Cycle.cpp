@@ -81,4 +81,4 @@ int main(){
 //Space Complexity:O(n)
 // where n is the number of vertices in the graph.
 // The time complexity is factorial because we are trying all possible permutations of vertices to find a Hamiltonian cycle. The space complexity is linear due to the path array used to store the current path.
-
+// it is an NP-C problem

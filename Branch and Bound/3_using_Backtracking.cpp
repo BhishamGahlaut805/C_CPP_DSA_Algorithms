@@ -33,3 +33,5 @@ int main()
     cout << "Maximum Value in Knapsack: " << maxValue << endl;
     return 0;
 }
+//The Time Complexity of this approach is O(2^n) in the worst case, where n is the number of items. This is because we explore all possible combinations of including or excluding each item. The Space Complexity is O(n) due to the recursion stack.
+// This is a brute-force approach and may not be efficient for large inputs. For larger inputs, dynamic programming or memoization techniques are preferred to optimize the solution.
