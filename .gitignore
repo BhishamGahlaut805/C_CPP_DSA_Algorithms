@@ -2,3 +2,5 @@
 launch.json
 settings.json
 task.json
+*.exe
+*.executable
